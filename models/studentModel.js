@@ -1,4 +1,11 @@
 
- const studentNames = ["kashifa", "Tayyaba"];
+import {Model,Schema} from 'mongoose';
 
- export default studentNames
+const studentSchema = new Schema({
+    studentName: String,
+    course: String,
+    age: Number,
+});
+    const Student = mongoose.model('Student', studentSchema);
+
+    export default Student

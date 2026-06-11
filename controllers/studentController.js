@@ -15,12 +15,18 @@ export  const getAllStudents = (req, res) => {
   });
 }
 
-export const addStudent = (req, res) => {
+export const addStudent = async(req, res) => { 
+  try {
+    const result = await Student.create(req.body)
+    res.status(201).json({
+      success: true,
+      message: "data added successfully",
+      data: result,
+    });
+  }
+    catch (error) {
+console.error(chalk.bgRed.bold('Error adding student:'), error.message);
 
-  console.log(req.params.indexNo)
-  console.log(req.body.studentName3)
-
-  studentNames[req.params.indexNo]= req.body.studentName3
 
   res.status(201).json({
     success: true,
