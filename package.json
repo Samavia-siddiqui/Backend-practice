@@ -1,24 +1,42 @@
 {
+<<<<<<< HEAD
   "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+  "name": "class4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+>>>>>>> c697a3599ae42086d88c56c76b54568d4e53a7a9
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "type": "commonjs",
   "dependencies": {
 <<<<<<< HEAD
     "express": "^5.2.1"
 =======
+=======
+  "type": "module",
+  "dependencies": {
+>>>>>>> c697a3599ae42086d88c56c76b54568d4e53a7a9
     "chalk": "^5.6.2",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongoose": "^9.6.3",
     "nodemon": "^3.1.14"
+<<<<<<< HEAD
 >>>>>>> c697a35 (Fixed chalk import and connection message)
+=======
+>>>>>>> c697a3599ae42086d88c56c76b54568d4e53a7a9
   }
 }
